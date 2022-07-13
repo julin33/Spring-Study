@@ -15,8 +15,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Spring-02-HelloSpring" options="--add-modules java.base" />
-      <module name="Spring-03-ioc2" options="--add-modules java.base" />
+      <module name="Spring-02-HelloSpring" options="" />
+      <module name="Spring-03-ioc2" options="" />
     </option>
   </component>
 </project>
