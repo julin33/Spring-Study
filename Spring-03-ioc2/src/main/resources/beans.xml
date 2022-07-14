@@ -3,12 +3,21 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--构造器注入-->
 
-    <bean id="user" class="com.julin.pojo.User">
-        <constructor-arg index="0" value="julin"/>
-    </bean>
+    <!--下标赋值-->
+<!--    <bean id="user" class="com.julin.pojo.User">-->
+<!--        <constructor-arg index="0" value="julin"/>-->
+<!--    </bean>-->
 
+    <!--通过类型创建(不建议)-->
+<!--    <bean id="user" class="com.julin.pojo.User">-->
+<!--        <constructor-arg type="java.lang.String" value="julin"/>-->
+<!--    </bean>-->
+
+    <!--通过引用 -->
     <bean id="userNew" class="com.julin.pojo.UserNew" name="user1,user2,user3">
-        <constructor-arg name="name" value="julin33"/>
+        <constructor-arg name="name" value="julin"/>
     </bean>
+
 </beans>
