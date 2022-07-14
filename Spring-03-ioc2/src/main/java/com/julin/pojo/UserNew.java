@@ -1,12 +1,11 @@
 package com.julin.pojo;
 
 import lombok.Data;
-
 @Data
-public class User {
+public class UserNew {
     private String name;
 
-    public User (String name){
+    public UserNew (String name){
         this.name = name;
     }
     public void show(){

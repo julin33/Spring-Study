@@ -4,11 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="user" class="com.julin.pojo.User">
-        <constructor-arg index="0" value="julin"/>
-    </bean>
-
-    <bean id="userNew" class="com.julin.pojo.UserNew" name="user1,user2,user3">
-        <constructor-arg name="name" value="julin33"/>
-    </bean>
+    <import resource="beans.xml"/>
+    <import resource="beans2.xml"/>
+    <import resource="beans3.xml"/>
 </beans>
