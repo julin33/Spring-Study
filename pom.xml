@@ -13,6 +13,9 @@
         <module>Spring-02-HelloSpring</module>
         <module>Spring-03-ioc2</module>
         <module>Spring-04-di</module>
+        <module>Spring-05-autowired</module>
+        <module>Spring-06-annotation</module>
+        <module>Spring-07-appconfig</module>
     </modules>
 
     <properties>
@@ -37,6 +40,12 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.24</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api -->
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>1.2</version>
         </dependency>
     </dependencies>
 </project>
