@@ -16,6 +16,7 @@
         <module>Spring-05-autowired</module>
         <module>Spring-06-annotation</module>
         <module>Spring-07-appconfig</module>
+        <module>Spring-08-proxy</module>
     </modules>
 
     <properties>
