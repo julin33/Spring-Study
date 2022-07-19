@@ -8,7 +8,7 @@ public class Client {
         ProxyInvocationHandler pih = new ProxyInvocationHandler();
         //通过调用程序处理角色来处理我们要调用的接口对象
         pih.setRent(host);
-        Rent Proxy = (Rent) pih.getProxy();
-
+        Rent proxy = (Rent) pih.getProxy();
+        proxy.rent();
     }
 }

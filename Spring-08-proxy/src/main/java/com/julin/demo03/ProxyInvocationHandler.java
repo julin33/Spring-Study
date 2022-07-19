@@ -1,4 +1,6 @@
-package com.julin.demo02;
+package com.julin.demo03;
+
+import com.julin.demo02.Rent;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -8,26 +10,22 @@ import java.lang.reflect.Proxy;
 public class ProxyInvocationHandler implements InvocationHandler {
 
     //被代理的接口
-    private Rent rent;
+    private Object target;
 
     public void setRent(Rent rent) {
-        this.rent = rent;
+        this.target = rent;
     }
 
     //生成代理类
     public Object getProxy(){
-        return Proxy.newProxyInstance(this.getClass().getClassLoader(), rent.getClass().getInterfaces(),this);
+        return Proxy.newProxyInstance(this.getClass().getClassLoader(), target.getClass().getInterfaces(),this);
     }
 
     //处理代理实例并返回结果
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        findHouse();
-        Object result = method.invoke(rent, args);
+        Object result = method.invoke(target, args);
         return result;
-    }
-    public void findHouse(){
-        System.out.println("中介帮你看房");
     }
 
 }
